@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@500;600&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body{
+  background: #f9f9f9;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+header{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo{
+  font-size: 2em;
+  color: white;
+  pointer-events: none;
+}
+.navbar a{
+  text-decoration: none;
+  color: white;
+  padding: 6px 15px;
+  border-radius: 0 10px;
+  font-weight: 500;
+}
+.navbar a:hover{
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+}
+
+.background{
+  background-image: url(bgimg.jpg);
+  background-repeat: none;
+  background-size: cover;
+  height: 100vh;
+}
+.content{
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+.content h1{
+  font-size: 70px;
+  margin-top: 50px;
+}
+.content p{
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 20px;
+}
+button{
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid green;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+button:hover {
+  background-color: green;
+  color: white;
+  padding: 15px 10px;
+}

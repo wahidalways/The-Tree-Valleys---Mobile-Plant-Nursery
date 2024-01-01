@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   {% load static %}
+    <link rel="stylesheet" href="{% static 'css/Products.css' %}">
+   <script src="js//products.js" defer></script>
+
+</head>
+<body> 
+   <header>
+      <h2 class="logo">The Tree Valleys</h2>
+      <nav class="navbar">
+         <a href="{% url 'index' %}">Home</a>
+         <a href="{% url 'about' %}">About</a>
+         <a href="{% url 'products' %}">Products</a>
+         <a href="#">Reviews</a>
+         <a href="{% url 'contact' %}">Contact</a>
+         <a href="{% url 'cart' %}">Cart</a>
+      </nav>
+      <a href="{% url 'signup' %}"><button onclick="window.location.href='signup.html'">Sign Up</button></a>
+      
+   </header>
+   <div class="background"></div>
+   
+   <div class="container">
+   <h4 class="stitle">Explore More</h4>
+   <div class="search-box">
+      <input type="text" class="input-search1" placeholder="Search various types of plants, flowers, etc.">
+      <i class="fa fa-search"></i>
+   </div>
+   <div class="search-box">
+      <input type="text" class="input-search" placeholder="City">
+      <input type="text" class="input-search" placeholder="Zone">
+      <input type="text" class="input-search" placeholder="Zip Code">
+   </div>
+   <h3 class="title"> Our Plants </h3>
+   <h5 class="title2">Some of the popular plants are displayed here!</h5>
+   <h2 class="nursery">1. Brac Nursery </h2>
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+         <img src="{% static 'images/1.png' %}" alt="">
+         <h3>Kamini Bonsai</h3>
+         <div class="price">৳  760.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Kamini Bonsai' amt='760' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="{% static 'images/2.png' %}" alt="">
+         <h3>Mini Tagor</h3>
+         <div class="price">৳  48.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Mini Tagor' amt='48' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="{% static 'images/3.png' %}" alt="">
+         <h3>Money Plant</h3>
+         <div class="price">৳ 380.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Money Plant' amt='380' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img src="{% static 'images/4.png' %}" alt="">
+         <h3>Hydrangea</h3>
+         <div class="price">৳ 475.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Hydrangea' amt='475' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="{% static 'images/5.png' %}" alt="">
+         <h3>Euphorbia Milii</h3>
+         <div class="price">৳  285.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Euphorbia Milii' amt='285' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img src="{% static 'images/6.png' %}" alt="">
+         <h3>Draceana Lucky Bamboo</h3>
+         <div class="price">৳  1425.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Draceana Lucky Bamboo' amt='1425' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+      
+
+   </div>
+   <h2 class="nursery"><span> 2. Safe To Grow </span></h2>
+   <div class="products-container">
+
+      <div class="product" data-name="p-1">
+         <img src="{% static 'images/1.png' %}" alt="">
+         <h3>Kamini Bonsai</h3>
+         <div class="price">৳  760.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Plants' amt='760' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="product" data-name="p-2">
+         <img src="{% static 'images/2.png' %}" alt="">
+         <h3>Mini Tagor</h3>
+         <div class="price">৳  48.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Mini Tagor' amt='48' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="product" data-name="p-3">
+         <img src="{% static 'images/3.png' %}" alt="">
+         <h3>Money Plant</h3>
+         <div class="price">৳ 380.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Money Plant' amt='380' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="product" data-name="p-4">
+         <img src="{% static 'images/4.png' %}" alt="">
+         <h3>Hydrangea</h3>
+         <div class="price">৳ 475.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Hydrangea' amt='475' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="product" data-name="p-5">
+         <img src="{% static 'images/5.png' %}" alt="">
+         <h3>Euphorbia Milii</h3>
+         <div class="price">৳  285.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Euphorbia Milii' amt='285' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+
+      <div class="product" data-name="p-6">
+         <img src="{% static 'images/6.png' %}" alt="">
+         <h3>Draceana Lucky Bamboo</h3>
+         <div class="price">৳  1425.00</div>
+         <div class="buttons">
+            <a href="#" class="buy">buy now</a>
+            <a href="{% url 'addToCart' pname='Draceana Lucky Bamboo' amt='1425' %}" class="cart">add to cart</a>
+         </div>
+      </div>
+      
+
+   </div>
+
+<div class="products-preview">
+
+   <div class="preview" data-target="p-1">
+      <i class="fas fa-times"></i>
+      <img src="images/1.png" alt="">
+      <h3>organic Kamini Bonsai</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Brand: BRAC Nursery;
+         Quantity: 1 pc;
+         Product Type: Plants;
+         Attractive Plant;
+         Fresh and good quality;
+         Suitable for house, office decoration.</p>
+      <div class="price">৳  760.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="{% url 'addToCart' pname='Plants' amt='760' %}" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-2">a
+      <i class="fas fa-times"></i>
+      <img src="images/2.png" alt="">
+      <h3>organic Mini Tagor</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Brand: BRAC Nursery;
+         Quantity: 1 pc;
+         Product Type: Plants;
+         Attractive Plant;
+         Fresh and good quality.</p>
+      <div class="price">৳  48.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-3">
+      <i class="fas fa-times"></i>
+      <img src="images/3.png" alt="">
+      <h3>organic Money Plant</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Brand: BRAC Nursery;
+         Quantity: 1 pc;
+         Product Type: Plants;
+         Attractive Plant;
+         Fresh and good quality;
+         Suitable for house, office decoration.</p>
+      <div class="price">৳  380.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-4">
+      <i class="fas fa-times"></i>
+      <img src="images/4.png" alt="">
+      <h3>organic Hydrangea</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Brand: BRAC Nursery;
+         Quantity: 1 pc;
+         Product Type: Plants;
+         Attractive Plant;
+         Fresh and good quality;
+         Suitable for house, office decoration.</p>
+      <div class="price">৳  475.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-5">
+      <i class="fas fa-times"></i>
+      <img src="images/5.png" alt="">
+      <h3>organic Euphorbia Milii</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Brand: BRAC Nursery;
+         Quantity: 1 pc;
+         Product Type: Plants;
+         Attractive Plant;
+         Fresh and good quality;
+         Suitable for house, office decoration.</p>
+      <div class="price">৳  285.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+   <div class="preview" data-target="p-6">
+      <i class="fas fa-times"></i>
+      <img src="images/6.png" alt="">
+      <h3>organic Draceana Lucky Bamboo</h3>
+      <div class="stars">
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star"></i>
+         <i class="fas fa-star-half-alt"></i>
+         <span>( 250 )</span>
+      </div>
+      <p>Brand: BRAC Nursery;
+         Quantity: 1 pc;
+         Product Type: Plants;
+         Attractive Plant;
+         Fresh and good quality;
+         Suitable for house, office decoration.</p>
+      <div class="price">৳  1425.00</div>
+      <div class="buttons">
+         <a href="#" class="buy">buy now</a>
+         <a href="#" class="cart">add to cart</a>
+      </div>
+   </div>
+
+</div>
+
+</body>
+</html>
